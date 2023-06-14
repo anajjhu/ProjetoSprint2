@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tela Professor Geografia</title>
+    <link rel="stylesheet" type="text/css" href="../css-prof/listaprof.css">
+    <script src="https://kit.fontawesome.com/dee798029c.js" crossorigin="anonymous"></script>
+</head>
+<body>
+    <header>
+        <div id="divHeader">
+            <img src="../../img/laguna-school.jpeg"> Geografia | Bem Vindo, Professor! 
+        </div>
+    </header>
+    <div class="container">
+        <div id="header">
+            <span>Cadastro de suas Atividades!</span>
+            <button id="btnAdicionar" onclick="abrir()">Nova Tarefa <i class="fa fa-plus"></i></button>
+        </div>
+
+          <div class="tabelinhaDados">
+            <table>
+              <thead>
+                <tr>
+                  <th>Matéria</th>
+                  <th>Conteúdo</th>
+                  <th>Prazo</th>
+                  <th>Descrição</th>
+                  <th class="acao">Editar</th>
+                  <th class="acao">Excluir</th>
+                </tr>
+              </thead>
+              <tbody id="new">
+              </tbody>
+            </table>
+          </div>
+
+          <div class="tarefa">
+
+          </div>
+
+          <div class="fade" id="fade">
+          <div class="telinhaAdd" id="telinha">
+            <div class="formAdd" id="form">
+              <form>
+                <label for="materia">Matéria</label>
+                <input id="materiaMat" type="text" required>
+        
+                <label for="conteudo">Conteúdo</label>
+                <input id="conteudo" type="text" required>
+        
+                <label for="prazo">Prazo</label>
+                <input id="prazo" type="date" required>
+
+                <label for="descricao">Descrição</label>
+                <textarea id="descricao" required></textarea>
+                <button id="btnSalvar" onclick="fecharSalvar()" type="button">Salvar</button>
+              </form>
+            </div> 
+          </div>
+          </div>
+    </div>
+    <script src="listaprofgeo.js"></script>
+</body>
+</html>
