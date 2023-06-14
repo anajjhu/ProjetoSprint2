@@ -1,0 +1,82 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@200;300;400;500;700&family=Roboto:wght@100;300;400;500;700;900&family=Source+Sans+Pro:wght@200;300;400;600;700;900&display=swap');
+* {
+    font-family: 'Poppins', sans-serif;
+}
+
+body {
+    /* trebuchet MS */
+    background: rgb(34,166,195);
+    background: linear-gradient(0deg, rgba(34,166,195,1) 0%, rgba(240,255,240,1) 100%); 
+    background-repeat: no-repeat;
+    background-size: contain;
+    height: 150vh;
+}
+
+#divHeader {
+    background-color: transparent;
+    width: 100%;
+    font-size: 50px;
+    align-items: center;
+    display:flex;
+    height: 100px;
+    margin: 0 auto;
+    
+}
+
+img {
+    height: 100px;
+    margin-right: 30px;
+    width: 300px;
+    mix-blend-mode: multiply;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 40px;
+}
+
+.container {
+    width: 95%;
+    height: 0 auto;
+    border-radius: 20px;
+    background-color: rgb(255, 255, 255);
+    margin: 0 auto;
+    margin-top: 40px;
+
+}
+
+#header {
+    display: flex; 
+    justify-content: space-between;
+    align-items: center;
+    margin: 10px;
+    background-color: rgb(255, 255, 255);
+    height: 60px;
+    font-size: 30px;
+    font-weight: bold;
+}
+
+.tabelinhaDados {
+    padding: 10px;
+}
+
+table {
+    width: 100%;
+    border-spacing: 10px;
+    border-collapse: collapse;
+}
+
+th.acao {
+    width: 100px;
+    text-align: center;
+}
+
+#mathTar {
+    font-weight: 500;
+    padding: 30px;
+}
+
+#mathTarDesc {
+    width: 30vw;
+    font-weight: 500;
+    padding: 20px;
+}
