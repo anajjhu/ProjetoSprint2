@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Cadastro interface</title>
+    <link rel="stylesheet" src="/css/index.css" href="cadastro.css">
+</head>
+<body>
+    <canvas class="background"> </canvas>
+    
+
+    <div class="main_login">
+        <div class="card-login">
+            <h1>cadastro</h1>
+            <form>
+                <div class="textfield">
+                    <label for="usuario" id="user">Nome de Usuário</label>
+                    <input type="text" id="usuario" placeholder="usuário">
+                </div>
+                <div class="textfield">
+                    <label for="senha" id="senha">Senha</label>
+                    <input type="password" id="senha" placeholder="senha">
+                </div>
+                <div class="textfield">
+                    <label for="senha2" id="senha2">Digite sua senha novamente</label>
+                    <input type="password" id="senha2" placeholder="senha">
+                </div>
+                <div class="textfield">
+                    <label for="cargo" id="cargo">Cargo (Professor/Estudante/Representante)</label>
+                    <div class="container_select">
+                        <select id="cargo" required>
+                            <option value="prof">Professor</option>
+                            <option value="estudante">Estudante</option>
+                            <option value="representante">Representante</option>
+                        </select>
+                    </div>
+                </div>
+                <br>
+                <div id="termos_checkbox">
+                    Eu li e concordo com os termos de Uso <input type="checkbox" required>
+                    <div id="abrirmodal">
+                        <button type="button" id="button_abrir_modal">Termos </button>
+                    </div>
+                </div>
+
+                <div id="modal_center">
+
+                    <dialog>
+                        <p>Nós, Rocket Coding, levamos a privacidade do usuário muito a sério. Coletamos informações
+                            pessoais dos usuários apenas quando elas são fornecidas voluntariamente, como nome, endereço
+                            de e-mail e informações de pagamento. Essas informações são usadas apenas para fornecer o
+                            serviço solicitado pelo usuário e não são compartilhadas com terceiros, a menos que seja
+                            exigido por lei ou por uma ordem judicial.
+
+                            Nós também coletamos informações não pessoais, como endereços IP, informações do navegador e
+                            dados de uso do site. Essas informações são usadas para melhorar o desempenho do serviço e
+                            personalizar a experiência do usuário. Essas informações não pessoais podem ser
+                            compartilhadas com terceiros para fins de análise de dados, publicidade e segurança.<br><br>
+                            <b>Segurança das Informações:</b>
+                            Nós tomamos medidas para proteger as informações do usuário contra acesso não autorizado,
+                            alteração, divulgação ou destruição. Usamos tecnologias de criptografia para proteger
+                            informações sensíveis, como informações de pagamento, e implementamos medidas de segurança
+                            física e técnica para proteger as informações armazenadas em nossos servidores.<br><br>
+                            <b>Cookies:</b>
+
+                            Nós usamos cookies para personalizar a experiência do usuário e melhorar o desempenho do
+                            serviço. Os cookies são pequenos arquivos de dados que são armazenados no dispositivo do
+                            usuário e podem ser usados para lembrar preferências de usuário, fornecer conteúdo
+                            personalizado e melhorar a segurança do serviço. Os usuários podem optar por desativar os
+                            cookies em seus navegadores, mas isso pode afetar a funcionalidade do serviço.<br><br>
+
+                            <b>Alterações nos Termos de Privacidade:</b>
+
+                            Nós podemos atualizar nossos termos de privacidade de tempos em tempos para refletir
+                            mudanças na lei ou em nossas práticas de negócios. Os usuários serão notificados de
+                            quaisquer alterações nos termos de privacidade e terão a oportunidade de revisá-las e
+                            concordar com elas antes de continuar a usar o serviço."
+                        </p>
+                        <button id="button_fechar_modal">Fechar</button>
+                    </dialog>
+            </form>
+        </div>
+
+        <button class="bnt-login" type="submit" onclick="cadastrar()">cadastrar</button>
+        <p id="login_aqui">Já tem login? <a href="../login/login.html">Faça login aqui!</a></p>
+    </div>
+    
+    <script src="cadastro.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/particlesjs/2.2.3/particles.min.js"></script>
+</body>
+
+</html>
