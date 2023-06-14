@@ -1,0 +1,162 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@200;300;400;500;700&family=Roboto:wght@100;300;400;500;700;900&family=Source+Sans+Pro:wght@200;300;400;600;700;900&display=swap');
+
+
+* {
+    font-family: 'Poppins', sans-serif;
+   
+}
+
+body{
+    margin: 0;
+}
+
+.background {
+    background:linear-gradient(black, rgb(27, 177, 177), rgb(8, 48, 109));
+    position:fixed;
+    z-index: 0;
+    height: 100vh;
+}
+
+
+.main-login {
+    /* 100vw -> porcentagem da largura da tela*/
+    width:100vw;
+    /* 100vh -> porcentagem da altura da tela */
+    height: 100vh;
+    display:flex; 
+    /* justify:content -> justifica os elementos no eixo x */
+    justify-content: center;
+    /* align-items -> justifica os elementos no eixo y */
+    align-items: center;
+    overflow: auto;
+    
+}
+
+.right-login{
+    width:40vw;
+    height:40vh;
+    justify-content: center;
+    align-items: center;
+}
+
+.card-login {
+    /* 60% -> ocupar 60% da div -> 60 % de 50vh */
+    width: 35%;
+    display:flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    /* margens internas -> 30px = eixo y; 35px = eixo x*/ 
+    padding: 30px 35px;
+    border-radius: 45px;
+    /* background: linear-gradient(0deg, rgba(240,255,240,1) 0%, rgba(34,166,195,1) 100%); */
+    /* sombra -> 1°valor = eixo x; 2°valor = eixo y (- = cima; + = baixo); 3°valor =
+    blur (sombra borrada) ; 4°valor = color */ 
+    box-shadow: 0px 0px 36px 6px rgba(0, 0, 0, 0.818);
+    margin: 0 auto;
+    position: absolute;
+    left: 30%;
+    margin-top: 28px;
+    background:linear-gradient(white, rgb(9, 155, 155), aqua)
+}
+
+.card-login > h1 {
+    color:black;
+    text-transform: uppercase;
+    font-family:'Poppins', sans-serif;
+    /* grossura da fonte */
+    font-weight: 600;
+    margin: 0;
+}
+
+.textfield{
+    width:100%;
+    display:flex;
+    /* com flex-direction: align-center: eixo x; justify-content: eixo y */
+    flex-direction:column;
+    align-items:flex-start;
+    justify-content:center;
+    margin:14px 0px;
+}
+
+.textfield > input {
+    width: 30vw;
+    height: 6vh;
+    border: none;
+    border-radius:12px;
+    /* um valor de padding: determina a margem interna dos eixos x e y */
+    padding: 15px;
+    background-color: rgb(255, 255, 255);
+    color:black;
+    font-size:12pt;
+    box-shadow:0px 10px 40px black;
+    /* outline:none -> retirar borda que fica, ao clicar com o mouse, no elemento */
+    outline: none;
+    box-sizing: border-box;
+    margin: 0 auto;
+}
+
+.textfield > label {
+    color:black;
+    margin-top:10px;
+    margin-bottom:4px;
+    margin-left:36px;
+
+}
+
+.bnt-login {
+    width: 86%;
+    padding: 16px 0px;
+    border: none;
+    border-radius:12px;
+    margin-top:18px;
+    outline:none;
+    /* text-transform:uppercase -> transformação das letras em maiúsculas */
+    text-transform:uppercase;
+    font-weight:400;
+    /* lettre-spacing: espaçamento entre letras */
+    letter-spacing:3px;
+    font-size:18px;
+    color: aliceblue;
+    background-color:rgba(0, 0, 0, 0.527);
+    /* cursor do mouse sob o botão */
+    cursor: pointer;
+    /* 4°valor spread (extensão do tamanho da sombra)*/
+    }
+
+
+    .bnt-login:hover {
+        color: rgb(46, 250, 182);
+        background-color:rgba(0, 0, 0, 0.766);
+        transition: background-color 0.5s, color 0.7s, text-shadow 0.7s;
+        text-shadow: 2px 1px 2px black;
+        cursor:pointer;
+    }
+
+.container_imagens {
+    display:flex;
+
+}
+
+select {
+    width: 30vw;
+    height: 6vh;
+    border-radius: 12px;
+    background-color: rgb(255, 255, 255);
+    box-shadow: 0px 10px 20px 4px rgba(0,0,0,0.527);
+    margin: 0 auto;
+    border: none;
+}
+.lnr-eye {
+    position: absolute;
+    top: 5px;
+    right: 10px;
+    cursor: pointer;
+}
+
+.container_select {
+    margin-bottom:18px;
+    margin-top:14px;
+    margin-bottom:4px;
+    margin-left:36px;
+}

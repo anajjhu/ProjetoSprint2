@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Login interface</title>
+    <link rel="stylesheet" src="login.css" href="login.css">
+</head>
+<body>
+    <canvas class="background">            </canvas>
+    <div class="main-login">   
+            <div class="card-login">
+                <h1>Login</h1>
+                <div class="textfield">
+                    <label for="usuario">Usuário</label>
+                    <input type="text" id="usuario" placeholder="usuario">
+                </div>
+                <div class="textfield">
+                    <label for="senha">Senha</label>
+                    <span class="lnr lnr-eye"></span>
+                    <input type="password" id="senha" placeholder="senha">
+                </div>
+                <div class="textfield">
+                    <label for="cargo" id="cargo">Cargo (Professor/Estudante/Representante)</label>
+                    <select id="cargo" required>
+                        <option id='prof' value="prof">Professor</option>
+                        <option id='estudante' value="estudante">Estudante</option>
+                        <option id="representante" value="representante">Representante</option>
+                    </select> 
+                </div>
+                <button href="" class="bnt-login" type="submit" onclick="logar()">Login</button>
+                <p>Ainda não tem Cadastro? <a href="../cadastro/cadastro.html">Cadastre-se Aqui!</a></p>
+            </div>
+            <div class="container_imagens">
+
+            </div>
+        </div>
+    </div>
+    
+    <script src="login.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/particlesjs/2.2.3/particles.min.js"></script>
+
+
+</body>
+
+</html>
